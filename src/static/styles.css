@@ -76,8 +76,32 @@ section h3 {
 
 .activity-card .participants-list {
   margin-top: 10px;
-  padding-left: 20px;
-  list-style-type: disc;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.participant-name {
+  flex: 1;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.delete-icon {
+  cursor: pointer;
+  margin-left: 8px;
+  color: #c62828;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #ef5350;
 }
 
 .activity-card .participants-list li {
